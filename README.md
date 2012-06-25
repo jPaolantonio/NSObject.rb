@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-    $ rails g objc_model ACTIVE_RECORD_NAME
+    $ rails g ajax:model ACTIVE_RECORD_NAME
 
 ## Contributing
 
