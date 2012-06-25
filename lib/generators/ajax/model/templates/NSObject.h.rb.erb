@@ -1,0 +1,26 @@
+//
+// Generated with NSObject.rb
+// Created by James Paolantonio
+//
+
+#import <Foundation/Foundation.h>
+
+<%= "@interface " + @objc.class_name + " : " + @objc.superclass_name + " {" %>
+<% @objc.strings_array.each do |a| %>
+	<%= "NSString *" + a + ";" %><% end %>
+<% @objc.numbers_array.each do |a| %>
+	<%= "NSNumber *" + a + ";" %><% end %>
+<% @objc.dates_array.each do |a| %>
+	<%= "NSDate *" + a + ";" %><% end %>
+}
+
+<% @objc.strings_array.each do |a| %>
+<%= "@property (strong, nonatomic) NSString *" + a + ";" %><% end %>
+<% @objc.numbers_array.each do |a| %>
+<%= "@property (strong, nonatomic) NSNumber *" + a + ";" %><% end %>
+<% @objc.dates_array.each do |a| %>
+<%= "@property (strong, nonatomic) NSDate *" + a + ";" %><% end %>
+
+- (id)initWithDictionary:(NSDictionary *)dictionary;
+
+@end
