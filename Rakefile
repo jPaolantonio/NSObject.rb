@@ -10,7 +10,7 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "nsobject.rb"
+    gem.name = "NSObvject.rb"
     gem.summary = %q{Active Record Rails models to native Objective-C.}
     gem.description = %q{Active Record Rails models to native Objective-C.  It allows you to generate Objective-C Models of your Active Record resources.}
     gem.email = "jamespaolantonio@gmail.com"
