@@ -1,15 +1,15 @@
-require 'generators/ajax/base.rb'
-require 'generators/ajax/model/Objc.rb'
+require 'generators/objc/base.rb'
+require 'generators/objc/model/objc_parser.rb'
 
-module Ajax
+module Objc
   module Generators
-    class ModelGenerator < Ajax::Generators::Base
+    class ModelGenerator < Objc::Generators::Base
       argument :records, :type => :array
 
       def create_view_files
         records.each do |r|
           puts r
-            @objc = Objc.new(r)
+            @objc = Objc_parser.new(r)
             
             template "NSObject.h.rb.erb", "objc/#{r}.h"
             template "NSObject.m.rb.erb", "objc/#{r}.m"

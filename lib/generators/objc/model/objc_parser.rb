@@ -1,6 +1,6 @@
-module Ajax
+module Objc
     module Generators
-        class Objc
+        class Objc_parser
     attr_accessor :class_name, :superclass_name, :strings_array, :numbers_array, :dates_array;
     
     def initialize(class_name)

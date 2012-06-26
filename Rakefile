@@ -1,8 +1,7 @@
 
 PKG_FILES = FileList[
   'Rakefile', 'README.md',
-  'lib/**/*',
-  'rails_generators/**/*'
+  'lib/**/*'
 ]
 require 'rubygems'
 require 'rake'
